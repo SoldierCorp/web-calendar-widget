@@ -1,0 +1,113 @@
+@import 'nib'
+
+tomato = #fc4e59
+mediumvioletred = #e01467
+crimson = #e21515
+orangered = #ec3800
+orangered_light = #f95b00
+darkorange = #f56e00
+goldenrod = #ffb736
+khaki = #fced58
+olivedrab = #7cb51e
+turquoise = #38e3cf
+darkcyan = #179c93
+royalblue = #1c80cc
+royalblue_dark = #2264ff
+blue = #0514ed
+blueviolet = #8a2aff
+darkviolet = #5800d2
+
+html,
+body
+    height 100%
+
+body
+    background khaki
+    font-family 'Source Sans Pro', sans-serif
+
+h3
+    font-size 1.6em
+    font-weight normal
+    margin-top 0
+
+section
+    background #29323f
+    box-shadow 10px 10px 30px rgba(0,0,0,0.5)
+    color white
+    margin 100px auto
+    width 380px
+    height 430px
+    header
+        height 20px
+        line-height 20px
+        padding 10px
+        position relative
+        #show-color
+            position absolute
+            top 20px
+            left 20px
+            background khaki
+            width 7px
+            height 7px
+            border-radius 50%
+            cursor pointer
+        #show-menu
+            position absolute
+            top 13px
+            right 20px
+            font-size 0.9em
+            cursor pointer
+    article
+        #choose-color-section
+            width 70%
+            margin 0 auto
+            text-align center
+            h3
+                margin-bottom 60px
+            > div
+                display flex
+                align-item center
+                justify-content space-between
+                margin-bottom 20px
+                span
+                    width 40px
+                    height 40px
+                    border-radius 50%
+                    border 4px solid transparent
+                    cursor pointer
+                    transition 0.3s ease all
+                    &.active,
+                    &:hover
+                        border-color white
+                #tomato
+                    background tomato
+                #mediumvioletred
+                    background mediumvioletred
+                #crimson
+                    background crimson
+                #orangered
+                    background orangered
+                #orangered-light
+                    background orangered_light
+                #darkorange
+                    background darkorange
+                #goldenrod
+                    background goldenrod
+                #khaki
+                    background khaki
+                #olivedrab
+                    background olivedrab
+                #turquoise
+                    background turquoise
+                #darkcyan
+                    background darkcyan
+                #royalblue
+                    background royalblue
+                #royalblue-dark
+                    background royalblue_dark
+                #blue
+                    background blue
+                #blueviolet
+                    background blueviolet
+                #darkviolet
+                    background darkviolet
