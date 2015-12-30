@@ -17,9 +17,6 @@ blue = #0514ed
 blueviolet = #8a2aff
 darkviolet = #5800d2
 
-html,
-body
-    height 100%
 
 body
     background khaki
@@ -58,6 +55,13 @@ section
             font-size 0.9em
             cursor pointer
     article
+        height 100%
+        > .active
+            display block
+        > div
+            display none
+            position relative
+            height 100%
         #choose-color-section
             width 70%
             margin 0 auto
@@ -111,3 +115,122 @@ section
                     background blueviolet
                 #darkviolet
                     background darkviolet
+        #calendar-section
+            text-align center
+            width 85%
+            margin 0 auto
+            .fc-slats,
+            .fc-content-skeleton,
+            .fc-bgevent-skeleton
+                pointer-events none
+            .fc-bgevent,
+            .fc-event-container
+                pointer-events auto
+            .fc-right
+                margin-right 60px
+            .fc-left
+                margin-left 60px
+            .fc-right,
+            .fc-left
+                button
+                    background none
+                    box-shadow none
+                    outline none
+                    border none
+            .fc-center
+                color khaki
+                font-size 1em
+            .fc-day-grid
+                margin-top 25px
+            .fc-day-grid-container
+                height auto !important
+                overflow hidden
+            .fc-other-month
+                visibility hidden
+            .fc-day,
+            .fc-day-number
+                text-align center
+                cursor pointer
+                z-index 99999
+            .fc-row
+                min-height 1.5em
+            .fc-widget-header,
+            .fc-widget-content
+                border none
+                font-size 1.15em
+            .fc-today
+                background transparent
+                color khaki
+            .fc-icon-right-single-arrow:after,
+            .fc-icon-left-single-arrow:after
+                color gray
+            .with-event
+                position relative
+                &:after
+                    content ''
+                    position absolute
+                    height 28px
+                    width 28px
+                    border 2px solid khaki
+                    border-radius 50%
+                    display block
+                    top 2px
+                    left 0
+                    right 0
+                    margin 0 auto
+            .add-event-active:after
+                background khaki
+            .td-with-event
+                color #29323f
+        #event-section
+            width 95%
+            margin 0 auto
+            text-align center
+            margin-top 30px
+            #weather
+                span
+                    display flex
+                    align-items center
+                    justify-content center
+                    .fa
+                        font-size 3em
+                        margin-right 10px
+                    h4
+                        font-size 3em
+                        font-weight 300
+                        margin 0
+            #event-description
+                position absolute
+                bottom 70px
+                padding 10px
+                background white
+                color #333
+                padding-bottom 25px
+                &:before
+                    content ''
+                    background rgba(255,255,255,0.3)
+                    position absolute
+                    height 10px
+                    margin 0 auto
+                    left 0
+                    right 0
+                    top -10px
+                    width 95%
+                h4
+                    font-size 1.6em
+                    margin-top 10px
+                > div
+                    display flex
+                    justify-content space-between
+                    div
+                        padding 0 5px
+                        .fa
+                            color #8485cd
+                            display block
+                            font-size 1.8em
+                        strong
+                            text-transform uppercase
+                            font-size 0.8em
+                        p
+                            color gray
+                            font-size 0.8em

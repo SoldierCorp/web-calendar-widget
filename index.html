@@ -5,6 +5,7 @@
     <title>Calendar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
             <span id="show-menu"><i class="fa fa-th-large"></i></span>
         </header>
         <article>
-            <div id="choose-color-section">
+            <div id="choose-color-section" class=''>
                 <h3>Choose theme color</h3>
                 <div>
                     <span id='tomato'></span>
@@ -41,7 +42,49 @@
                     <span id="darkviolet"></span>
                 </div>
             </div>
+            <div id="calendar-section" class=''></div>
+            <div id="event-section" class='active'>
+                <div id="weather">
+                    <span>
+                        <i class='fa fa-cloud'></i>
+                        <h4>57 &#x2109;</h4>
+                    </span>
+                </div>
+                <div id="event-description">
+                    <h4>Jessica's Birthday Party</h4>
+                    <div>
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <strong>Location</strong>
+                            <p>
+                                7th William St.
+                                Washington DC
+                                201143
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa fa-clock-o"></i>
+                            <strong>Time</strong>
+                            <p>
+                                7:00PM
+                            </p>
+                        </div>
+                        <div>
+                            <i class="fa fa-user"></i>
+                            <strong>Attendee</strong>
+                            <p>
+                                Chris B, Hanna J,
+                                Alen C, and 12 more
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src='scripts/moment.js'></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.js"></script>
+    <script src='scripts/main.js'></script>
 </body>
 </html>
